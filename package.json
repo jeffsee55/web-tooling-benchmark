@@ -8,7 +8,8 @@
     "benchmark": "node dist/cli.js",
     "build:terser-bundled": "node node_modules/terser/bin/uglifyjs -b preamble=\"'const Terser = module.exports = {};'\" --self > build/terser-bundled.js",
     "build:uglify-js-bundled": "node node_modules/uglify-js/bin/uglifyjs -b preamble=\"'const UglifyJS = module.exports = {};'\" --self > build/uglify-js-bundled.js",
-    "build": "webpack",
+    "build": "npm run benchmark",
+    "webpack": "webpack",
     "postinstall": "npm run build:terser-bundled && npm run build:uglify-js-bundled && npm run build",
     "precommit": "node tools/hooks/pre-commit.js && lint-staged",
     "test": "jest",
@@ -77,5 +78,6 @@
     "semver": "^5.5.0",
     "web-tooling-benchmark-generator": "^1.0.2",
     "webpack": "^3.8.1"
-  }
+  },
+  "packageManager": "pnpm@8.15.7+sha512.c85cd21b6da10332156b1ca2aa79c0a61ee7ad2eb0453b88ab299289e9e8ca93e6091232b25c07cbf61f6df77128d9c849e5c9ac6e44854dbd211c49f3a67adc"
 }
