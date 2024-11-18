@@ -1,0 +1,35 @@
+Container Name: my-container-1731972197
+Node.js Version: v18.20.5
+Peak Memory Usage: 957.5 MB
+Total Execution Time: 73 seconds
+--max-semi-space-size=16
+Specified Memory Limit: 8G
+------------------------
+Container Name: my-container-1731972315
+Node.js Version: v18.20.5
+Peak Memory Usage: 1015 MB
+Total Execution Time: 74 seconds
+--max-semi-space-size=32
+Specified Memory Limit: 8G
+------------------------
+Container Name: my-container-1731972496
+Node.js Version: v18.20.5
+Peak Memory Usage: 937.9 MB
+Total Execution Time: 68 seconds
+--max-semi-space-size=64
+Specified Memory Limit: 8G
+------------------------
+Container Name: my-container-1731972573
+Node.js Version: v18.20.5
+Peak Memory Usage: 995.8 MB
+Total Execution Time: 66 seconds
+--max-semi-space-size=128
+Specified Memory Limit: 8G
+------------------------
+Container Name: my-container-1731972661
+Node.js Version: v18.20.5
+Peak Memory Usage: 927.1 MB
+Total Execution Time: 68 seconds
+--max-semi-space-size=256
+Specified Memory Limit: 8G
+------------------------
