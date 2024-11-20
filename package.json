@@ -9,7 +9,7 @@
     "build:terser-bundled": "node node_modules/terser/bin/uglifyjs -b preamble=\"'const Terser = module.exports = {};'\" --self > build/terser-bundled.js",
     "build:uglify-js-bundled": "node node_modules/uglify-js/bin/uglifyjs -b preamble=\"'const UglifyJS = module.exports = {};'\" --self > build/uglify-js-bundled.js",
     "webpack": "webpack",
-    "build": "npm run webpack && npm run benchmark",
+    "build": "npm run webpack && npm run build:terser-bundled && npm run build:uglify-js-bundled && npm run benchmark",
     "precommit": "node tools/hooks/pre-commit.js && lint-staged",
     "test": "jest",
     "update-lock": "npm install --package-lock",
